@@ -1,0 +1,10 @@
+mss
+opencv-python-headless
+numpy
+pillow
+pydirectinput
+rapidocr-onnxruntime
+pywin32
+pynput
+tokenizers
+requests

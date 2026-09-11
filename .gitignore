@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# AI models (~150MB, downloaded via download_models.py)
+models/
+
+# Temporary screenshots / debug images in project root
+/*.png
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
