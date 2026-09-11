@@ -68,6 +68,7 @@ python download_models.py   # 仅 vision/both 模式需要
 
    ```bash
    python main.py --dry-run
+   # 或双击方式：run.bat --dry-run
    ```
 
 3. **正式运行**：
@@ -77,7 +78,21 @@ python download_models.py   # 仅 vision/both 模式需要
    python main.py --max-videos 50 # 自定义数量
    ```
 
+   最简单：**双击 `run.bat`** 即可（自动定位 Python、切到项目目录、参数透传，退出后窗口保留）。
+   也可带参数：`run.bat --dry-run`、`run.bat --max-videos 50`、`run.bat --mode text`。
+
 4. 运行期间**不要动鼠标键盘**（悬浮窗顶栏可拖动、点 ✕ 即停止；点击悬浮窗会使抖音暂时失去前台，程序会暂停等待你切回抖音后继续）。
+
+## Git 管理
+
+项目用 git 管理（`models/` 大文件、`__pycache__` 等已在 `.gitignore` 排除，
+克隆后需 `python download_models.py` 重新下载模型）。常用：
+
+```bash
+git log --oneline     # 查看版本历史
+git diff              # 查看未提交改动
+git add -A && git commit -m "描述"
+```
 
 ## 悬浮日志窗
 
